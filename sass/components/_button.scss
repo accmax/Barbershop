@@ -1,0 +1,62 @@
+.button {
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  padding: 12px 20px;
+
+  text-align: center;
+  font-family: "Open-sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
+
+#upbutton {
+  height: 40px;
+  bottom: 20px;
+  right: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+
+  text-align: center;
+  font-family: "Open-sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $secondary-text-color;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}

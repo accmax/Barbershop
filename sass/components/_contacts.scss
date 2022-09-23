@@ -1,0 +1,119 @@
+.section-contacts {
+  background-image: url(../../images/ContactsBgImg.png);
+  background-color: $secondary-background-color;
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../../images/contactsTabletBgImg.png);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../../images/contactsDesktopBgImg.png);
+  }
+}
+
+.section-wrapper-bg {
+  background-color: $secondary-background-color;
+}
+
+.contacts-container {
+  @media screen and (min-width: $desktop) {
+    padding-left: 100px;
+    width: auto;
+  }
+}
+
+.address {
+  fill: $secondary-text-color;
+}
+
+.botom-contacts {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    display: flex;
+    // justify-content: space-between;
+    // width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+.botom-address {
+  margin: 0;
+}
+
+.footer-list {
+  margin-bottom: 44px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: $secondary-text-color;
+  fill: $secondary-text-color;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.address-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  svg {
+    margin-right: 16px;
+  }
+}
+
+.contacts-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $white-color;
+
+  &::before {
+    content: "";
+    margin-right: 20px;
+    width: 63px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.6);
+  }
+}
+
+.contacts-title {
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.working-hours {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-left: 30px;
+  }
+}
+
+.working-hours-text {
+  font-size: 18px;
+  line-height: 1.66;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: $secondary-text-color;
+}

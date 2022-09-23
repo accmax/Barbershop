@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $white-color;
+  color: $primary-text-color;
+  font-family: Open-sans, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+h3 {
+  margin-top: 0px;
+  color: $title-text-color;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+.section-title {
+  text-align: start;
+  color: $title-text-color;
+  font-family: Raleway;
+  //   @extend %title;
+  font-weight: 700;
+  margin-bottom: 44px;
+  font-size: 42px;
+  line-height: 1.17;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  &:hover {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,81 @@
+.list-about {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin: -15px;
+  }
+}
+
+.container-about {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about-item {
+  @media screen and (min-width: $desktop) {
+    margin: 15px;
+  }
+}
+
+.about-title {
+  margin-bottom: 20px;
+  width: 330px;
+  text-align: start;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: $title-text-color;
+}
+
+.about-text {
+  margin-bottom: 20px;
+
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.about-team {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.about-gallery {
+  margin-right: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 64px;
+  }
+  // width: 50%;
+}
+
+.about-picture {
+  max-width: unset;
+}
+
+// .about-info {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.about-item:not(:last-child) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}

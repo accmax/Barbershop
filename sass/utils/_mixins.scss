@@ -1,0 +1,19 @@
+@mixin font(
+  $font-weight: 400,
+  $font-size: 16px,
+  $line-height: 1.63,
+  $letter-spacing: 0.03em,
+  $font-family: Open-sans
+) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+}
+
+@mixin centeredflex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}

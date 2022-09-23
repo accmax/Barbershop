@@ -1,0 +1,155 @@
+.hero-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1280px;
+  }
+}
+
+.hero-left {
+  width: 159px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: $white-color;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 155px;
+  }
+}
+
+.hero-right {
+  height: 580px;
+  width: 480px;
+
+  @media screen and (min-width: $tablet) {
+    height: 680px;
+    width: 609px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 680px;
+    width: 1125px;
+  }
+}
+
+.hero-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: $white-color;
+}
+
+.hero-info {
+  position: absolute;
+  width: 306px;
+  top: 208px;
+  left: 31px;
+
+  @media screen and (min-width: $tablet) {
+    width: 355px;
+    top: 272px;
+    left: 279px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 500px;
+    left: 255px;
+  }
+}
+
+.hero-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+
+  &::before {
+    content: "";
+    margin-right: 20px;
+    width: 63px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.6);
+  }
+
+  &.dark {
+    color: $title-text-color;
+
+    &::before {
+      background-color: $title-text-color;
+    }
+  }
+}
+
+.hero-title {
+  margin-bottom: 20px;
+}
+
+.hero-socials {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.sidebar-item:first-child::before {
+  content: "";
+  display: block;
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.sidebar-item:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-item:not(:first-child) {
+  @media screen and (max-width: $mobile) {
+    margin-left: 100px;
+  }
+}
+
+.sidebar-hero-list {
+  @media screen and (max-width: $mobile) {
+    // display: none;
+  }
+
+  display: flex;
+  transform: rotateZ(-90deg);
+  margin-bottom: 180px;
+  align-items: center;
+}

@@ -1,0 +1,102 @@
+.benefits-container {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.benefits-info {
+  margin-bottom: 44px;
+
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
+}
+
+.benefits-title {
+  margin-bottom: 20px;
+}
+
+.benefits-text {
+  font-size: 18px;
+  line-height: 1.67;
+
+  letter-spacing: 0.02em;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: 130px;
+    width: 370px;
+  }
+  // margin: -15px;
+}
+
+.benefits-item {
+  display: block;
+  // margin: 15px;
+  height: 133px;
+  width: calc((100% - 30px) / 2);
+  padding: 20px;
+  background-color: $primary-background-color;
+
+  // @media screen and (min-width: $tablet) {
+  //   width: 210px;
+  // }
+
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+.benefits-quantity {
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  color: $title-text-color;
+
+  &::after {
+    display: inline;
+    margin-top: 7px;
+    content: "+";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: $accent-color;
+  }
+}
+
+.benefits-descr {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: $title-text-color;
+}
