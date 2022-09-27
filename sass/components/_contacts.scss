@@ -1,13 +1,13 @@
 .section-contacts {
-  background-image: url(../../images/ContactsBgImg.png);
+  background-image: url(../images/ContactsBgImg.png);
   background-color: $secondary-background-color;
 
   @media screen and (min-width: $tablet) {
-    background-image: url(../../images/contactsTabletBgImg.png);
+    background-image: url(../images/contactsTabletBgImg.png);
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url(../../images/contactsDesktopBgImg.png);
+    background-image: url(../images/contactsDesktopBgImg.png);
   }
 }
 
