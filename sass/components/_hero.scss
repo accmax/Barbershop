@@ -3,8 +3,13 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
+    width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -144,10 +149,6 @@
 }
 
 .sidebar-hero-list {
-  @media screen and (max-width: $mobile) {
-    // display: none;
-  }
-
   display: flex;
   transform: rotateZ(-90deg);
   margin-bottom: 180px;

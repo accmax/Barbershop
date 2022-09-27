@@ -40,20 +40,14 @@
     margin-right: 130px;
     width: 370px;
   }
-  // margin: -15px;
 }
 
 .benefits-item {
   display: block;
-  // margin: 15px;
   height: 133px;
   width: calc((100% - 30px) / 2);
   padding: 20px;
   background-color: $primary-background-color;
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 210px;
-  // }
 
   &:nth-child(even) {
     margin-top: 30px;
@@ -82,8 +76,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 22px;
-    /* identical to box height */
+    line-height: 1.36;
 
     text-align: center;
 

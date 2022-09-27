@@ -57,7 +57,7 @@
   }
 
   .item:not(:last-child) {
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: calc($tablet - 1px)) {
       margin-bottom: 24px;
       margin-right: 24px;
     }
@@ -151,10 +151,14 @@
   background-color: transparent;
   padding-top: 40px;
 
-  @media screen and (min-width: $tablet) {
-    width: 679px;
+  @media screen and (min-width: $mobile) {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 679px;
     align-items: flex-start;
   }
 
@@ -168,7 +172,8 @@
   align-items: center;
   color: $accent-color;
   fill: $white-color;
-  @media screen and (max-width: $mobile) {
+
+  @media screen and (max-width: $tablet) {
     margin-left: 31px;
   }
 

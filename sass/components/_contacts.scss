@@ -29,8 +29,6 @@
 .botom-contacts {
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     display: flex;
-    // justify-content: space-between;
-    // width: calc((100% - 2 * 30px) / 2);
   }
 }
 
@@ -45,7 +43,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
-  /* identical to box height, or 167% */
 
   letter-spacing: 0.02em;
 
@@ -78,8 +75,7 @@
 
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
+  line-height: 1.36;
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -111,7 +107,6 @@
 .working-hours-text {
   font-size: 18px;
   line-height: 1.66;
-  /* identical to box height, or 167% */
 
   letter-spacing: 0.02em;
 

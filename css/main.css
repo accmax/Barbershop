@@ -412,7 +412,6 @@ ul {
   width: 160px;
   padding: 12px 20px;
   text-align: center;
-  font-family: "Open-sans";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
@@ -440,7 +439,6 @@ ul {
   position: fixed;
   z-index: 999;
   text-align: center;
-  font-family: "Open-sans";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
@@ -528,7 +526,7 @@ ul {
     margin-left: 40px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-list .item:not(:last-child) {
     margin-bottom: 24px;
     margin-right: 24px;
@@ -637,11 +635,16 @@ ul {
   background-color: transparent;
   padding-top: 40px;
 }
+@media screen and (min-width: 480px) {
+  .header-container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-container {
     width: 679px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: flex-start;
   }
 }
@@ -657,7 +660,7 @@ ul {
   color: #ff6c00;
   fill: #ffffff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .logo {
     margin-left: 31px;
   }
@@ -805,9 +808,15 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .hero-container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-container {
     display: flex;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -954,6 +963,7 @@ ul {
   margin-bottom: 180px;
   align-items: center;
 }
+
 .slick-dots {
   display: flex;
   flex-direction: column;
@@ -1033,7 +1043,7 @@ ul {
   letter-spacing: 0.1em;
   color: rgba(157, 164, 189, 0.6);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .slick-arrow {
     display: none;
   }
@@ -1306,8 +1316,7 @@ ul {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
-  /* identical to box height */
+  line-height: 1.36;
   text-align: center;
   color: #ff6c00;
 }
@@ -1476,6 +1485,7 @@ ul {
 }
 
 .form-field {
+  position: relative;
   margin-bottom: 44px;
   width: 100%;
 }
@@ -1499,7 +1509,6 @@ ul {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  /* identical to box height */
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
@@ -1509,11 +1518,31 @@ ul {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   cursor: pointer;
+  outline: none;
 }
 
-textarea {
+.form-label {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-textarea:hover + .form-label, .footer-textarea:focus + .form-label, .footer-textarea:not(:placeholder-shown) + .form-label, .footer-input:hover + .form-label, .footer-input:focus + .form-label, .footer-input:not(:placeholder-shown) + .form-label {
+  color: #ffffff;
+  transform: translateY(calc(-100% - 16px));
+}
+
+.footer-textarea {
   width: 100%;
   height: 76px;
+  resize: none;
   background: none;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -1521,20 +1550,16 @@ textarea {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  /* identical to box height */
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
 }
-textarea:hover, textarea:focus {
+.footer-textarea:hover, .footer-textarea:focus {
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #ffffff;
   cursor: pointer;
-}
-
-textarea {
-  resize: none;
+  outline: none;
 }
 
 .section-contacts {
@@ -1583,7 +1608,6 @@ textarea {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
-  /* identical to box height, or 167% */
   letter-spacing: 0.02em;
   color: #9da4bd;
   fill: #9da4bd;
@@ -1612,8 +1636,7 @@ textarea {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
@@ -1644,7 +1667,6 @@ textarea {
 .working-hours-text {
   font-size: 18px;
   line-height: 1.66;
-  /* identical to box height, or 167% */
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
@@ -1670,7 +1692,6 @@ textarea {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  /* identical to box height */
   letter-spacing: 0.2em;
   color: #9da4bd;
 }
@@ -1686,7 +1707,6 @@ textarea {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  /* identical to box height */
   letter-spacing: 0.2em;
   color: #303030;
 }

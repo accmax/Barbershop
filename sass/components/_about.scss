@@ -62,17 +62,11 @@
   @media screen and (min-width: $desktop) {
     margin-right: 64px;
   }
-  // width: 50%;
 }
 
 .about-picture {
   max-width: unset;
 }
-
-// .about-info {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .about-item:not(:last-child) {
   @media screen and (min-width: $tablet) and (max-width: $tablet) {

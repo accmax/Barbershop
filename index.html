@@ -69,14 +69,14 @@
                   <a href="#contacts" class="link">Контакты</a>
                 </li>
               </ul>
-              <ul class="list contacts-list">
+              <ul class="list contacts-list" mobile-menu-close>
                 <li class="item">
                   <a href="tel:380441111111" class="contacts-top">
                    +38 044 111 11 11
                   </a>
                 </li>
-                <li>
-                   <button class="button">онлайн-запись</button>
+                <li >
+                   <a class="button" href="#entry">онлайн-запись</a>
                 </li>
               </ul>
             </nav>
@@ -572,17 +572,17 @@
                 <form class="entry-subscribe">
                   <div class="submit-field">
                     <div class="form-field">
-                      <label for="name" class="form-label"></label>
-                      <input class="footer-input" type="text" name="name" id="name" placeholder="ИМЯ*" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы" required>
+                      <input class="footer-input" type="text" name="name" id="name" placeholder=" " minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы" required>
+                      <label for="name" class="form-label">ИМЯ*</label>
                     </div>
                     <div class="form-field">
-                      <label for="tel" class="form-label"></label>
-                      <input class="footer-input" type="tel" name="tel" id="tel" placeholder="ТЕЛЕФОН*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00">
+                      <input class="footer-input" type="tel" name="tel" id="tel" placeholder=" " pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00">
+                      <label for="tel" class="form-label">ТЕЛЕФОН*</label>
                     </div>
                   </div>
                   <div class="form-field textarea">
-                    <label for="comment" class="form-label"></label>
-                    <textarea name="comment" id="comment" cols="" rows="" placeholder="СООБЩЕНИЕ"></textarea>
+                    <textarea name="comment" class="footer-textarea" id="comment" cols="" rows="" placeholder=" "></textarea>
+                    <label for="comment" class="form-label">СООБЩЕНИЕ</label>
                   </div>
                   <button class="button button-ondark" type="submit">ОТПРАВИТЬ</button>
                 </form>

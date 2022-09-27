@@ -75,7 +75,7 @@
 
   color: rgba(157, 164, 189, 0.6);
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 
